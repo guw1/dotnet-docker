@@ -1,0 +1,19 @@
+1. Interactive Unit Testing with .Net Core and VS Code. https://www.codemag.com/Article/2009101/Interactive-Unit-Testing-with-.NET-Core-and-VS-Code
+
+2. List all kube contexts
+kubectl config get-contexts
+
+select docker-desktop kube cluster
+kubectl config use-context docker-desktop
+
+deploy your app to docker-desktop cluster
+kubectl apply -f bb.yaml 
+
+find node ip
+kubectl get nodes -o wide 
+run http://replacewithIpfromabovecommand:30001
+
+delete cluster after use
+kubectl delete -f bb.yaml
+
+link: https://docs.docker.com/get-started/kube-deploy/#describing-apps-using-kubernetes-yaml
